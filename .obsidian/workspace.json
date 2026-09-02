@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "0a9a0b6889bd9e5c",
+    "type": "split",
+    "children": [
+      {
+        "id": "50987a7c1328a35b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7855ce1444fd091c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8fb1066a6977c645",
+    "type": "split",
+    "children": [
+      {
+        "id": "4bcf6818e48b1aba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "849d6eb1aa0e88c6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b0170402c633f2af",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "55c57358c3a8789e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 454.9140625
+  },
+  "right": {
+    "id": "90802010b93e7907",
+    "type": "split",
+    "children": [
+      {
+        "id": "95a98bae5b19cbd8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "326e145f998facd6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "33d8beb2a15b92ab",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "4922e98c707911f1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "ce8976651984307c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d91faf64fc813fcb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "7855ce1444fd091c",
+  "lastOpenFiles": [
+    "README.md",
+    "2025-02-28-foss-mastering-superfile-the-ultimate-terminal-based-file-manager-for-power-users.md",
+    "Effortless Data Storage with LocalBase and IndexedDB.md",
+    "💾 Redis Is Open Source Again - What that means ?.md",
+    "2024-06-09-how-to-cancel-an-http-request.md",
+    "2024-06-09-composite-design-pattern.md",
+    "Untitled",
+    "2024-09-11-haproxy-ep-8-load-balancing-with-random-load-balancing.md",
+    "2026-02-07-there-is-nothing-random-inside-a-computer.md",
+    "2026-02-07-breaking-big-problems-into-small-reliable-steps-with-prompt-chaining.md",
+    "2026-02-05-movielens-360-user-retention-recommendation-amp-engagement-analytics.md",
+    "2026-02-05-e-commerce-customer-360-churn-amp-revenue-analytics.md",
+    "2026-02-05-django-forms-amp-validations-from-simple-to-advanced.md",
+    "2026-01-08-ahhh-working-from-office-again-due-to-ai-automations.md",
+    "2025-11-23-many-people-accidently-typed-perplexityin-instead-of-perplexitycom.md",
+    "2025-11-09-it-seems-there-are-names-for-way-of-asking-questions-called-as-prompt-engineering.md",
+    "2025-11-09-have-you-been-told-use-plain-sql-its-faster-than-orm.md",
+    "2025-11-08-understanding-common-table-expressions-cte-in-sql-simplifying-complex-queries.md",
+    "2025-11-08-saving-and-reviving-a-basic-machine-learning-model.md",
+    "2025-11-08-introduction-to-ddl-data-definition-language-in-sql.md",
+    "2025-11-08-a-performance-measurement-for-machine-learning-classification-problem-where-output-can-be-two-or-more-classes-simply-called-as-confusion-matrix.md",
+    "2025-11-05-postgresql-backups-protecting-your-data-like-an-architect.md",
+    "2025-11-03-student-progress-tracker-mongodb-capstone-project-mdb-p-001.md",
+    "2025-11-03-inventory-and-order-management-system-mongodb-capstone-project-mdb-p-002.md",
+    "2025-10-02-consistent-hashing-in-load-balancer.md",
+    "2025-07-08-python-generators-the-lazy-workers-of-python.md",
+    "2025-06-01-git-reset-a-tool-to-correct-your-commited-mistakes.md"
+  ]
+}
