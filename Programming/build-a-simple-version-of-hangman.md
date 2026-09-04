@@ -1,0 +1,24 @@
+---
+layout: post
+title: Build a simple version of Hangman.
+date: 2024-08-11 07:37:24+00:00
+render_with_liquid: false
+category: Programming
+tags:
+- Hangman
+- GameDevelopment
+- PythonExample
+---
+
+
+
+<figure class="wp-block-embed is-type-rich is-provider-embed-handler wp-block-embed-embed-handler wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper"><span class="embed-youtube" style="text-align:center; display: block;"><iframe allowfullscreen="true" class="youtube-player" height="360" sandbox="allow-scripts allow-same-origin allow-popups allow-presentation allow-popups-to-escape-sandbox" src="https://www.youtube.com/embed/videoseries?list=PLiutOxBS1Mizte0ehfMrRKHSIQcCImwHL&amp;version=3&amp;rel=1&amp;showsearch=0&amp;showinfo=1&amp;iv_load_policy=1&amp;fs=1&amp;hl=en-US&amp;autohide=2&amp;wmode=transparent" style="border:0;" width="640"></iframe></span></div></figure><p class="wp-block-paragraph">Creating a simple version of Hangman is a fun way to practice programming and game logic. </p><p class="wp-block-paragraph">Here’s a structured approach to building this game, including game steps, input ideas, and additional features to enhance it.</p><h3 class="wp-block-heading">Game Steps (Workflow)</h3><ol class="wp-block-list"><li><strong>Introduction</strong>:<ul class="wp-block-list"><li>Start with a welcome message explaining the rules of Hangman.</li><li>Provide brief instructions on how to play (guessing letters, how many guesses are allowed, etc.).</li></ul></li><li><strong>Word Selection</strong>:<ul class="wp-block-list"><li>Choose a word for the player to guess. This can be randomly selected from a predefined list or from a file.</li></ul></li><li><strong>Display State</strong>:<ul class="wp-block-list"><li>Show the current state of the word with guessed letters and placeholders for remaining letters.</li><li>Display the number of incorrect guesses left (hangman stages).</li></ul></li><li><strong>User Input</strong>:<ul class="wp-block-list"><li>Prompt the player to guess a letter.</li><li>Check if the letter is in the word.</li></ul></li><li><strong>Update Game State</strong>:<ul class="wp-block-list"><li>Update the display with the correct guesses.</li><li>Keep track of incorrect guesses and update the hangman drawing if applicable.</li></ul></li><li><strong>Check for Win/Loss</strong>:<ul class="wp-block-list"><li>Determine if the player has guessed the word or used all allowed guesses.</li><li>Display a win or loss message based on the result.</li></ul></li><li><strong>Replay Option</strong>:<ul class="wp-block-list"><li>Offer the player the option to play again or exit the game.</li></ul></li></ol><h3 class="wp-block-heading">Input Ideas</h3><ol class="wp-block-list"><li><strong>Guess Input</strong>:<ul class="wp-block-list"><li>Prompt the player to enter a single letter.</li><li>Validate that the input is a single alphabetic character.</li></ul></li><li><strong>Replay Input</strong>:<ul class="wp-block-list"><li>After a game ends, ask the player if they want to play again (e.g., <code>y</code> for yes, <code>n</code> for no).</li></ul></li><li><strong>Word List</strong>:<ul class="wp-block-list"><li>Provide a list of words to choose from, which can be hardcoded or read from a file.</li></ul></li></ol><h3 class="wp-block-heading">Additional Features</h3><ol class="wp-block-list"><li><strong>Difficulty Levels</strong>:<ul class="wp-block-list"><li>Implement difficulty levels by varying word length or allowing more or fewer incorrect guesses.</li></ul></li><li><strong>Hangman Drawing</strong>:<ul class="wp-block-list"><li>Add a visual representation of the hangman that updates with each incorrect guess.</li></ul></li><li><strong>Hints</strong>:<ul class="wp-block-list"><li>Offer hints if the player is struggling (e.g., reveal a letter or provide a clue).</li></ul></li><li><strong>Word Categories</strong>:<ul class="wp-block-list"><li>Categorize words into themes (e.g., animals, movies) and allow players to choose a category.</li></ul></li><li><strong>Score Tracking</strong>:<ul class="wp-block-list"><li>Keep track of the player’s score across multiple games and display statistics.</li></ul></li><li><strong>Save and Load</strong>:<ul class="wp-block-list"><li>Allow players to save their progress and load a game later.</li></ul></li><li><strong>Custom Words</strong>:<ul class="wp-block-list"><li>Allow players to input their own words for the game.</li></ul></li><li><strong>Leaderboard</strong>:<ul class="wp-block-list"><li>Create a leaderboard to track high scores and player achievements.</li></ul></li></ol>
+
+
+## Related Posts
+- [[Decorator Design Pattern]]
+- [[ML Notes #1 - Linear Regression from Scratch]]
+- [[Implement a simple key-value storage system - Python Project]]
+- [[Python-FUNDAMENTALS: The Print()]]
+- [[RSVP for K6 : Load Testing Made Easy in Tamil [Event Completed]]]
+

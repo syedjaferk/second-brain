@@ -1,0 +1,24 @@
+---
+layout: post
+title: 'The Botanical Garden and Rose Garden: Understanding Sets'
+date: 2024-08-03 09:36:05+00:00
+render_with_liquid: false
+category: Sets
+tags:
+- Botanical Garden
+- Mathematics
+- Flowers
+---
+
+
+
+<h2 class="wp-block-heading"><strong>Introduction to the Botanical Garden</strong></h2><p class="wp-block-paragraph">We are planning to opening a botanical garden with flowers which will attract people to visit.</p><h3 class="wp-block-heading"><strong>Morning: Planting Unique Flowers</strong></h3><p class="wp-block-paragraph">One morning, we decides to plant flowers in the garden. They ensure that each flower they plant is unique.<br/><br/></p><figure class="wp-block-image size-large is-resized"><img alt="" class="wp-image-765" data-recalc-dims="1" decoding="async" height="797" loading="lazy" src="https://i0.wp.com/parottasalna.com/wp-content/uploads/2024/08/image-3.png?resize=1200%2C797&amp;ssl=1" style="width:473px;height:auto" width="1200"/></figure><pre class="wp-block-syntaxhighlighter-code">botanical_garden = {"Rose", "Lily", "Sunflower"}</pre><h3 class="wp-block-heading">Noon: Adding More Flowers</h3><p class="wp-block-paragraph">At noon, they find some more flowers and add them to the garden, making sure they only add flowers that aren’t already there.</p><p class="wp-block-paragraph"><strong>Adding Elements to a Set:</strong></p><pre class="wp-block-syntaxhighlighter-code"># Adding more unique flowers to the enchanted gardenbotanical_garden.add("Jasmine")botanical_garden.add("Hibiscus")print(botanical_garden)# output: {'Hibiscus', 'Rose', 'Tulip', 'Sunflower', 'Jasmine'}</pre><h3 class="wp-block-heading">Afternoon: Trying to Plant Duplicate Flowers</h3><p class="wp-block-paragraph">In the afternoon, they accidentally try to plant another Rose, but the garden’s rule prevents any duplicates from being added.</p><p class="wp-block-paragraph"><strong>Adding Duplicate Elements:</strong></p><pre class="wp-block-syntaxhighlighter-code"># Attempting to add a duplicate flowerbotanical_garden.add("Rose")print(botanical_garden)# output: {'Lily', 'Sunflower', 'Rose'}</pre><h3 class="wp-block-heading">Evening: Removing Unwanted Plants</h3><p class="wp-block-paragraph">As evening approaches, they decide to remove some flowers they no longer want in their garden.</p><p class="wp-block-paragraph"><strong>Removing Elements from a Set:</strong></p><pre class="wp-block-syntaxhighlighter-code"># Removing a flower from the enchanted gardenbotanical_garden.remove("Lily")print(botanical_garden)# output: {'Sunflower', 'Rose'}</pre><h3 class="wp-block-heading">Night: Checking Flower Types</h3><p class="wp-block-paragraph">Before going to bed, they check if certain flowers are present in their botanical garden.</p><p class="wp-block-paragraph"><strong>Checking Membership:</strong></p><pre class="wp-block-syntaxhighlighter-code"># Checking if certain flowers are in the gardenis_rose_in_garden = "Rose" in botanical_gardenis_tulip_in_garden = "Tulip" in botanical_gardenprint(f"Is Rose in the garden? {is_rose_in_garden}")print(f"Is Tulip in the garden? {is_tulip_in_garden}")# Output# Is Rose in the garden? True# Is Tulip in the garden? False</pre><h3 class="wp-block-heading">Midnight: Comparing with Rose Garden</h3><p class="wp-block-paragraph">Late at night, they compare their botanical garden with their rose garden to see which flowers they have in common and which are unique to each garden.</p><p class="wp-block-paragraph"><strong>Set Operations: </strong></p><p class="wp-block-paragraph"><strong>Intersections: </strong></p><pre class="wp-block-syntaxhighlighter-code"># Neighbor's enchanted gardenrose_garden = {"Rose", "Lavender"}# Flowers in both gardens (Intersection)common_flowers = botanical_garden.intersection(rose_garden)print(f"Common flowers: {common_flowers}")# Output# Common flowers: {'Rose'}# Unique flowers: {'Sunflower'}# All unique flowers: {'Sunflower', 'Lavender', 'Rose'}</pre><p class="wp-block-paragraph"><strong>Difference: </strong></p><pre class="wp-block-syntaxhighlighter-code"># Flowers unique to their garden (Difference)unique_flowers = botanical_garden.difference(rose_garden)print(f"Unique flowers: {unique_flowers}")#output# Unique flowers: {'Sunflower'}</pre><p class="wp-block-paragraph"><strong>Union:</strong></p><pre class="wp-block-syntaxhighlighter-code"># All unique flowers from both gardens (Union)all_unique_flowers = botanical_garden.union(rose_garden)print(f"All unique flowers: {all_unique_flowers}")# Output: All unique flowers: {'Sunflower', 'Lavender', 'Rose'}</pre>
+
+
+## Related Posts
+- [[Python Generators – The Lazy Workers of Python]]
+- [[Problem Statements : Git &amp; Github Session - St. Joseph's GDG Meeting]]
+- [[🚀 #FOSS: Mastering Superfile: The Ultimate Terminal-Based File Manager for Power Users]]
+- [[The Magic Photo Album - Python Tuple]]
+- [[Python List : The Delivery Man's Busy Day]]
+

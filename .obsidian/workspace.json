@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "50987a7c1328a35b",
+        "id": "fae063053893fa2f",
         "type": "tabs",
         "children": [
           {
-            "id": "7855ce1444fd091c",
+            "id": "2079fc5733e08a51",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2024-06-10-decorator-design-pattern.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2024-06-10-decorator-design-pattern"
             }
           }
         ]
@@ -79,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 454.9140625
+    "width": 448.890625
   },
   "right": {
     "id": "90802010b93e7907",
@@ -181,34 +185,54 @@
       "bases:Create new base": false
     }
   },
-  "active": "7855ce1444fd091c",
+  "active": "849d6eb1aa0e88c6",
   "lastOpenFiles": [
-    "README.md",
-    "2025-02-28-foss-mastering-superfile-the-ultimate-terminal-based-file-manager-for-power-users.md",
-    "Effortless Data Storage with LocalBase and IndexedDB.md",
-    "💾 Redis Is Open Source Again - What that means ?.md",
-    "2024-06-09-how-to-cancel-an-http-request.md",
-    "2024-06-09-composite-design-pattern.md",
-    "Untitled",
-    "2024-09-11-haproxy-ep-8-load-balancing-with-random-load-balancing.md",
-    "2026-02-07-there-is-nothing-random-inside-a-computer.md",
-    "2026-02-07-breaking-big-problems-into-small-reliable-steps-with-prompt-chaining.md",
-    "2026-02-05-movielens-360-user-retention-recommendation-amp-engagement-analytics.md",
-    "2026-02-05-e-commerce-customer-360-churn-amp-revenue-analytics.md",
-    "2026-02-05-django-forms-amp-validations-from-simple-to-advanced.md",
-    "2026-01-08-ahhh-working-from-office-again-due-to-ai-automations.md",
-    "2025-11-23-many-people-accidently-typed-perplexityin-instead-of-perplexitycom.md",
-    "2025-11-09-it-seems-there-are-names-for-way-of-asking-questions-called-as-prompt-engineering.md",
+    "organize.py",
+    "2025-01-26-event-summary-grafana-amp-friends-meetup-chennai-25-01-2025.md",
     "2025-11-09-have-you-been-told-use-plain-sql-its-faster-than-orm.md",
-    "2025-11-08-understanding-common-table-expressions-cte-in-sql-simplifying-complex-queries.md",
-    "2025-11-08-saving-and-reviving-a-basic-machine-learning-model.md",
-    "2025-11-08-introduction-to-ddl-data-definition-language-in-sql.md",
-    "2025-11-08-a-performance-measurement-for-machine-learning-classification-problem-where-output-can-be-two-or-more-classes-simply-called-as-confusion-matrix.md",
-    "2025-11-05-postgresql-backups-protecting-your-data-like-an-architect.md",
-    "2025-11-03-student-progress-tracker-mongodb-capstone-project-mdb-p-001.md",
-    "2025-11-03-inventory-and-order-management-system-mongodb-capstone-project-mdb-p-002.md",
-    "2025-10-02-consistent-hashing-in-load-balancer.md",
-    "2025-07-08-python-generators-the-lazy-workers-of-python.md",
-    "2025-06-01-git-reset-a-tool-to-correct-your-commited-mistakes.md"
+    "Linux Fundamentals for Docker - Study Guide.md",
+    "quartz/node_modules/@quartz-community/latex/dist/index.d.ts",
+    "quartz/node_modules/@quartz-community/latex/README.md",
+    "quartz/node_modules/@quartz-community/latex/CHANGELOG.md",
+    "quartz/node_modules/typescript/ThirdPartyNoticeText.txt",
+    "quartz/node_modules/typescript/LICENSE.txt",
+    "quartz/node_modules/typescript/lib/typescript.d.ts",
+    "quartz/node_modules/typescript/lib/tsserverlibrary.d.ts",
+    "quartz/node_modules/typescript/lib/lib.webworker.iterable.d.ts",
+    "quartz/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+    "quartz/node_modules/typescript/lib/lib.webworker.d.ts",
+    "quartz/node_modules/typescript/lib/lib.webworker.asynciterable.d.ts",
+    "quartz/node_modules/typescript/lib/lib.scripthost.d.ts",
+    "quartz/node_modules/@quartz-community/syntax-highlighting/README.md",
+    "quartz/node_modules/@quartz-community/syntax-highlighting/CHANGELOG.md",
+    "quartz/node_modules/typescript/SECURITY.md",
+    "quartz/node_modules/typescript/README.md",
+    "quartz/node_modules/@img/sharp-libvips-linuxmusl-x64/README.md",
+    "quartz/node_modules/@img/sharp-libvips-linux-x64/README.md",
+    "quartz/node_modules/yaml/README.md",
+    "quartz/node_modules/@esbuild/linux-x64/README.md",
+    "quartz/node_modules/tsx/node_modules/@esbuild/linux-x64/README.md",
+    "quartz/node_modules/resolve/SECURITY.md",
+    "quartz/node_modules/preact/README.md",
+    "quartz/node_modules/mdast-util-to-markdown/readme.md",
+    "quartz/node_modules/@quartz-community/citations/README.md",
+    "quartz/node_modules/@quartz-community/citations/CHANGELOG.md",
+    "quartz/node_modules/micromark-core-commonmark/readme.md",
+    "quartz/node_modules/sass/README.md",
+    "quartz/node_modules/isomorphic-git/README.md",
+    "quartz/node_modules/isomorphic-git/LICENSE.md",
+    "quartz/node_modules/entities/readme.md",
+    "quartz/node_modules/prettier/THIRD-PARTY-NOTICES.md",
+    "quartz/quartz/static/og-image.png",
+    "quartz/quartz/static/icon.png",
+    "quartz/docs/images/social-image-preview-light.png",
+    "quartz/docs/images/social-image-preview-dark.png",
+    "quartz/docs/images/quartz-layout-tablet.png",
+    "quartz/docs/images/quartz-layout-mobile.png",
+    "quartz/docs/images/quartz-layout-desktop.png",
+    "quartz/docs/images/quartz transform pipeline.png",
+    "quartz/docs/images/github-quick-setup.png",
+    "quartz/docs/images/github-init-repo-options.png",
+    "quartz/docs/Canvas.canvas"
   ]
 }

@@ -1,0 +1,27 @@
+---
+layout: post
+title: 'Learning Notes #43 - Avoiding Insurmountable Queue Backlogs | AWS | Cloud
+  Pattern'
+date: 2025-01-06 16:45:59+00:00
+render_with_liquid: false
+category: AWS Cloud
+tags:
+- Queue Management
+- AWS Builders Library
+- Cloud Patterns
+- Latency Optimization
+- System Durability
+---
+
+
+
+<p class="wp-block-paragraph"></p><p class="wp-block-paragraph">Today i got a chance to read about <a href="https://aws.amazon.com/builders-library/avoiding-insurmountable-queue-backlogs/">https://aws.amazon.com/builders-library/avoiding-insurmountable-queue-backlogs/</a>where they mention how to deal with backlog messages in the queue. Its a nice read. I will recommend you to read the same. In this blog i jot down notes from aws blog for future reference. </p><p class="wp-block-paragraph"><strong>1. Understanding Queue Behavior</strong>: While queues enhance system durability and availability by handling asynchronous tasks, they can also lead to <strong>increased latency and prolonged recovery times if backlogs occur</strong>.</p><p class="wp-block-paragraph">2. <strong>Causes of Backlogs</strong>: Backlogs can arise from system failures, unexpected load patterns, or when the message arrival rate surpasses the processing rate, leading to increased latency and potential system unavailability.</p><p class="wp-block-paragraph">3. <strong>Measuring Availability and Latency</strong>: Metrics such as the number of messages in <a href="https://parottasalna.com/wp-content/uploads/2024/12/ln_14_dead_letter_exchange.png">Dead Letter Queues (DLQs) </a>and message age are effective indicators of system availability and latency, respectively</p><p class="wp-block-paragraph"></p><h2 class="wp-block-heading"><strong>Strategies to Prevent and Manage Backlogs</strong></h2><p class="wp-block-paragraph">1. <strong>Separate Workloads into Individual Queues</strong>: Assigning separate queues for different workloads or customers can prevent one workload from impacting others.</p><p class="wp-block-paragraph">2. <strong>Implement Shuffle-Sharding</strong>: Distributing workloads across a fixed number of queues using hashing techniques ensures that a single customer’s load doesn’t overwhelm the system.</p><p class="wp-block-paragraph">3. <strong>Sidelining Excess Traffic</strong>: Redirecting excess traffic to separate ‘spillover’ queues allows the system to handle surges without affecting primary processing.</p><p class="wp-block-paragraph">4. <strong>Prioritize Fresh Messages</strong>: Processing newer messages first (LIFO approach) ensures timely handling of current data, while older messages can be processed as capacity allows</p><p class="wp-block-paragraph">5. <strong>Set Message Time-to-Live (TTL)</strong>: Implementing TTL for messages ensures that outdated messages are automatically discarded, preventing unnecessary processing.</p><p class="wp-block-paragraph">6. <strong>Limit Resource Allocation per Workload</strong>: Controlling the number of processing threads or resources assigned to each workload prevents any single workload from monopolizing system resources.</p><p class="wp-block-paragraph">7. <strong>Implement Backpressure Mechanisms</strong>: Sending feedback to upstream systems to control the inflow of messages helps manage load and prevent backlogs.</p><p class="wp-block-paragraph">8. <strong>Use Delay Queues</strong>: Introducing delay queues postpones processing of certain messages, allowing the system to manage workloads more effectively during high-load periods.</p><p class="wp-block-paragraph">9. <strong>Avoid Excessive In-Flight Messages</strong>: Limiting the number of messages being processed simultaneously prevents system overload and potential failures.</p><p class="wp-block-paragraph">10. <strong>Utilize Dead Letter Queues (DLQs)</strong>: Routing messages that cannot be processed after multiple attempts to <a href="https://parottasalna.com/wp-content/uploads/2024/12/ln_14_dead_letter_exchange.png">DLQs </a>ensures problematic messages don’t hinder overall processing.</p><p class="wp-block-paragraph">11. <strong>Ensure Adequate Buffering</strong>: Maintaining sufficient buffering capacity in polling threads accommodates workload spikes and enhances system resilience.</p><p class="wp-block-paragraph"><a href="https://lumigo.io/blog/amazon-builders-library-in-focus-4-avoiding-insurmountable-queue-backlogs/?utm_source=chatgpt.com" rel="noreferrer noopener" target="_blank"></a></p><p class="wp-block-paragraph">12. <strong>Implement Heartbeating for Long-Running Messages</strong>: Regularly updating the visibility timeout for long-running messages prevents them from being reprocessed due to perceived timeouts.</p><p class="wp-block-paragraph"><a href="https://lumigo.io/blog/amazon-builders-library-in-focus-4-avoiding-insurmountable-queue-backlogs/?utm_source=chatgpt.com" rel="noreferrer noopener" target="_blank"></a></p><p class="wp-block-paragraph">13. <strong>Plan for Cross-Host Debugging</strong>: Employing tools like AWS X-Ray and correlation IDs facilitates effective debugging across distributed systems.</p><p class="wp-block-paragraph"></p>
+
+
+## Related Posts
+- [[Learning Notes #45 - Backpressure Handling in Distributed Systems]]
+- [[Learning Notes #30 - Queue Based Loading | Cloud Patterns]]
+- [[Learning Notes #52 - Hybrid Origin Failover Pattern]]
+- [[Learning Notes #44 - Initial Steps on Distributed Tracing and Observability]]
+- [[Learning Notes #22 - Claim Check Pattern | Cloud Pattern]]
+

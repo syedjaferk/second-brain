@@ -1,1 +1,7 @@
-{}
+{
+  "enabledCssSnippets": [
+    "full_width"
+  ],
+  "baseFontSize": 19,
+  "baseFontSizeAction": true
+}

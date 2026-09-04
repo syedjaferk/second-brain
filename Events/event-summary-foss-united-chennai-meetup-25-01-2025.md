@@ -1,0 +1,24 @@
+---
+layout: post
+title: 'Event Summary: FOSS United Chennai Meetup - 25-01-2025'
+date: 2025-01-26 04:53:32+00:00
+render_with_liquid: false
+category: Events
+tags:
+- FOSSUnited
+- ChennaiMeetup
+- TechCommunity
+---
+
+
+
+<p class="wp-block-paragraph"></p><p class="wp-block-paragraph">🚀 Attended the FOSS United Chennai Meetup Yesterday! 🚀<br/><br/>After, attending Grafana &amp; Friends Meetup, straightly went to FOSS United Chennai Meetup at <a href="https://www.linkedin.com/company/yuniq-yq/">YuniQ</a> in Taramani.<br/><br/>Had a chance to meet my Friends face to face after a long time. <a href="https://www.linkedin.com/in/ACoAAA_mgEEBPTn7YfN1LFChnu2q9_9vI976aL0"></a><a href="https://www.linkedin.com/in/sakh1l/">Sakhil Ahamed E.</a> , <a href="https://www.linkedin.com/in/ACoAADV9zwQBiAwnRLm4vntMqOpa5lhDEkQIZR8"></a><a href="https://www.linkedin.com/in/tkdhanasekar/">Dhanasekar T</a>, <a href="https://www.linkedin.com/in/ACoAACJmtggBsp74w4NdoEhsQ2JD12i4rzK6WQc"></a><a href="https://www.linkedin.com/in/dhanasekar-chellamuthu-808356141/">Dhanasekar Chellamuthu</a>, <a href="https://www.linkedin.com/in/ACoAABldUcwBu11uQKX4Lk9BRF62LGnhOsdhASI"></a><a href="https://www.linkedin.com/in/thangaayyanar/">Thanga Ayyanar</a>, <a href="https://www.linkedin.com/in/ACoAAC6YIvUBAAK1UAhzgZr12SaDpSxcN8-y1rw"></a><a href="https://www.linkedin.com/in/parameshwar273/">Parameshwar Arunachalam</a>, <a href="https://www.linkedin.com/in/ACoAAEYExE4Bi2e4P-1cYQOEVoj5pJWpe91-15M"></a><a href="https://www.linkedin.com/in/guruprasaths/">Guru Prasath S</a>, Krisha, <a href="https://www.linkedin.com/in/ACoAADznsLEB74PZG97DPcYlP7NSpEKHhF4xvXQ"></a><a href="https://www.linkedin.com/in/gopinathan-asokan/">Gopinathan Asokan</a><br/><br/>Talks Summary,<br/><br/>1. <a href="https://www.linkedin.com/in/ACoAACUAicgBBBvat3Z-KtN60Xv7LBY8nBG2-80"></a><a href="https://www.linkedin.com/in/ansharora28/">Ansh Arora</a>, Gave a tour on FOSS United, How its formed, Motto, FOSS Hack, FOSS Clubs.<br/><br/>2. <a href="https://www.linkedin.com/in/ACoAAArx5IoBZ1QlV3uo-mV_zNQXTgm4ETiUIeA"></a><a href="https://www.linkedin.com/in/karthikeyan-a-k/">Karthikeyan A K</a>, Gave a talk on his open source product <a href="https://www.linkedin.com/company/injee/">injee</a> (The no configuration instant database for frontend developers.). It’s a great tool. He gave a personal demo for me. It’s a great tool with lot of potentials. Would like to contribute !.<br/><br/>3. <a href="https://www.linkedin.com/in/ACoAADOdcccBsksodRTiFO2eYvGhIcuTZFKou2g"></a><a href="https://www.linkedin.com/in/justinbenito/">Justin Benito</a>, How they celebrated New Year with <a href="https://tamilnadu.tech">https://tamilnadu.tech</a><br/>It’s single go to page for events in Tamil Nadu. If you are interested ,go to the repo <a href="https://lnkd.in/geKFqnFz">https://lnkd.in/geKFqnFz</a> and contribute.<br/><br/>From <a href="https://www.linkedin.com/company/kaniyam-foundation/">Kaniyam Foundation</a> we are maintaining a Google Calendar for a long time on Tech Events happening in Tamil Nadu <a href="https://lnkd.in/gbmGMuaa">https://lnkd.in/gbmGMuaa</a>.<br/><br/>4. <a href="https://www.linkedin.com/in/ACoAAEAs5A4BLLUxijBSrzUtVOtGe7ch4BlggHM"></a><a href="https://www.linkedin.com/in/bupddotxyz/">Prasanth Baskar</a>, gave a talk on Harbor, OSS Container Registry with SBOM and more functionalities. SBOM was new to me.<br/><br/>5. <a href="https://www.linkedin.com/in/ACoAABldUcwBu11uQKX4Lk9BRF62LGnhOsdhASI"></a><a href="https://www.linkedin.com/in/thangaayyanar/">Thanga Ayyanar</a>, gave a talk on Static Site Generation with Emacs.<br/><br/>At the end, we had a group photo and went for tea. Got to meet my Juniors from <a href="https://www.linkedin.com/company/st-joseph-s-institute-of-technology/">St. Joseph’s Institute of Technology</a> in this meet. Had a discussion with <a href="https://www.linkedin.com/in/ACoAAC6YIvUBAAK1UAhzgZr12SaDpSxcN8-y1rw"></a><a href="https://www.linkedin.com/in/parameshwar273/">Parameshwar Arunachalam</a> on his BuildToLearn Experience. They started prototyping an Tinder app for Tamil Words. After that had a small discussion on our Feb 8th Glug Inauguration at <a href="https://www.linkedin.com/company/st-joseph-s-institute-of-technology/">St. Joseph’s Institute of Technology</a> <a href="https://www.linkedin.com/in/ACoAAAjEGFEBgEeRXrPjnLhZiEae_koFzKvz8FM"></a><a href="https://www.linkedin.com/in/drkarthim/">Dr. KARTHI M</a> .<br/><br/>Happy to see, lot of minds travelling from different districts to attend this meet.<br/></p>
+
+
+## Related Posts
+- [[Event Summary: Grafana &amp; Friends Meetup Chennai - 25-01-2025]]
+- [[Kanchi Linux Users Group Weekly Meeting | MoM – Dec 28, 2024]]
+- [[RabbitMQ - All You Need To Know To Start Building Scalable Platforms]]
+- [[Learning Notes #68 - Buildpacks and Dockerfile]]
+- [[Learning Notes #48 - Common Pitfalls in Event Driven Architecture]]
+
