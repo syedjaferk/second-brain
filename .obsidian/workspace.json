@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "fae063053893fa2f",
+        "id": "a928dfcca733fa60",
         "type": "tabs",
         "children": [
           {
-            "id": "2079fc5733e08a51",
+            "id": "3a8599b690021118",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2024-06-10-decorator-design-pattern.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2024-06-10-decorator-design-pattern"
+              "title": "New tab"
             }
           }
         ]
@@ -185,8 +181,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "849d6eb1aa0e88c6",
+  "active": "3a8599b690021118",
   "lastOpenFiles": [
+    "Untitled.md",
+    "Untitled 1.md",
     "organize.py",
     "2025-01-26-event-summary-grafana-amp-friends-meetup-chennai-25-01-2025.md",
     "2025-11-09-have-you-been-told-use-plain-sql-its-faster-than-orm.md",
@@ -202,7 +200,6 @@
     "quartz/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
     "quartz/node_modules/typescript/lib/lib.webworker.d.ts",
     "quartz/node_modules/typescript/lib/lib.webworker.asynciterable.d.ts",
-    "quartz/node_modules/typescript/lib/lib.scripthost.d.ts",
     "quartz/node_modules/@quartz-community/syntax-highlighting/README.md",
     "quartz/node_modules/@quartz-community/syntax-highlighting/CHANGELOG.md",
     "quartz/node_modules/typescript/SECURITY.md",
@@ -222,7 +219,6 @@
     "quartz/node_modules/isomorphic-git/README.md",
     "quartz/node_modules/isomorphic-git/LICENSE.md",
     "quartz/node_modules/entities/readme.md",
-    "quartz/node_modules/prettier/THIRD-PARTY-NOTICES.md",
     "quartz/quartz/static/og-image.png",
     "quartz/quartz/static/icon.png",
     "quartz/docs/images/social-image-preview-light.png",
