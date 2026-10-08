@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a928dfcca733fa60",
+        "id": "3b084552bdf99406",
         "type": "tabs",
         "children": [
           {
-            "id": "3a8599b690021118",
+            "id": "841c0137ac87bf8f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "AWS/S3/Syllabus.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Syllabus"
             }
           }
         ]
@@ -79,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 448.890625
+    "width": 248.78190231323242
   },
   "right": {
     "id": "90802010b93e7907",
@@ -181,8 +185,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "3a8599b690021118",
+  "active": "849d6eb1aa0e88c6",
   "lastOpenFiles": [
+    "Data Engineering with DBX",
+    "0.Focus/Today.md",
+    "AWS/S3/Syllabus.md",
+    "AWS/S3",
+    "0.Focus/RabbitMQ Syllabus.md",
+    "RabbitMQ/Untitled.md",
+    "youtube/Postgres.md",
+    "0.Focus",
+    "youtube/AI Agents.md",
+    "youtube/RAG.md",
+    "Automation/learning-notes-2-automate-email-notifications-in-github-actions.md",
+    "Cron Jobs/how-to-manage-multiple-cron-job-executions.md",
+    "youtube/N8N Sessions.md",
+    "youtube/Kubernetes Engineering.md",
+    "youtube/AWS Solutions Architect/Descriptions.md",
+    "youtube/4 Day Bootcamp on Linux.md",
+    "youtube/POTD",
+    "youtube/AWS Solutions Architect",
+    "youtube",
+    "Programming/learning-notes-58-command-query-responsibility-segregation-an-idea-overview.md",
+    "AWS/AWS Web Application Firewall.md",
+    "Qdrant/Qdrant Learning Syllabus — From Scratch to Production.md",
+    "Coding/caesar-cipher-implement-a-basic-encryption-and-decryption-tool.md",
+    "Qdrant",
+    "Prompt Engineering/it-seems-there-are-names-for-way-of-asking-questions-called-as-prompt-engineering.md",
+    "Untitled.canvas",
     "Untitled.md",
     "Untitled 1.md",
     "organize.py",
@@ -194,31 +224,6 @@
     "quartz/node_modules/@quartz-community/latex/CHANGELOG.md",
     "quartz/node_modules/typescript/ThirdPartyNoticeText.txt",
     "quartz/node_modules/typescript/LICENSE.txt",
-    "quartz/node_modules/typescript/lib/typescript.d.ts",
-    "quartz/node_modules/typescript/lib/tsserverlibrary.d.ts",
-    "quartz/node_modules/typescript/lib/lib.webworker.iterable.d.ts",
-    "quartz/node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-    "quartz/node_modules/typescript/lib/lib.webworker.d.ts",
-    "quartz/node_modules/typescript/lib/lib.webworker.asynciterable.d.ts",
-    "quartz/node_modules/@quartz-community/syntax-highlighting/README.md",
-    "quartz/node_modules/@quartz-community/syntax-highlighting/CHANGELOG.md",
-    "quartz/node_modules/typescript/SECURITY.md",
-    "quartz/node_modules/typescript/README.md",
-    "quartz/node_modules/@img/sharp-libvips-linuxmusl-x64/README.md",
-    "quartz/node_modules/@img/sharp-libvips-linux-x64/README.md",
-    "quartz/node_modules/yaml/README.md",
-    "quartz/node_modules/@esbuild/linux-x64/README.md",
-    "quartz/node_modules/tsx/node_modules/@esbuild/linux-x64/README.md",
-    "quartz/node_modules/resolve/SECURITY.md",
-    "quartz/node_modules/preact/README.md",
-    "quartz/node_modules/mdast-util-to-markdown/readme.md",
-    "quartz/node_modules/@quartz-community/citations/README.md",
-    "quartz/node_modules/@quartz-community/citations/CHANGELOG.md",
-    "quartz/node_modules/micromark-core-commonmark/readme.md",
-    "quartz/node_modules/sass/README.md",
-    "quartz/node_modules/isomorphic-git/README.md",
-    "quartz/node_modules/isomorphic-git/LICENSE.md",
-    "quartz/node_modules/entities/readme.md",
     "quartz/quartz/static/og-image.png",
     "quartz/quartz/static/icon.png",
     "quartz/docs/images/social-image-preview-light.png",
