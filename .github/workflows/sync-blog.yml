@@ -1,0 +1,36 @@
+name: Publish blog
+
+# Every push to main refreshes the blog on learn.parottasalna.com.
+# The key in BLOG_SYNC_SSH_KEY can only run "sync-blog" on the server (forced command),
+# so even if it leaked it could not do anything else.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: blog-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    if: github.repository == 'syedjaferk/second-brain'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Sync blog
+        env:
+          SSH_KEY: ${{ secrets.BLOG_SYNC_SSH_KEY }}
+          SSH_HOST: ${{ secrets.DEPLOY_SSH_HOST }}
+          SSH_USER: ${{ secrets.DEPLOY_SSH_USER }}
+          KNOWN_HOSTS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        run: |
+          set -euo pipefail
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/blog_key
+          chmod 600 ~/.ssh/blog_key
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+          trap 'rm -f ~/.ssh/blog_key' EXIT
+          ssh -i ~/.ssh/blog_key -o BatchMode=yes -o StrictHostKeyChecking=yes "$SSH_USER@$SSH_HOST" sync-blog
