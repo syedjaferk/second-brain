@@ -13,7 +13,30 @@ tags:
 
 
 
-<p class="wp-block-paragraph"></p><h2 class="wp-block-heading">Problem Statement</h2><blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p class="wp-block-paragraph">Geeks For Geeks : <a href="https://www.geeksforgeeks.org/problems/longest-distinct-characters-in-string5848/1">https://www.geeksforgeeks.org/problems/longest-distinct-characters-in-string5848/1</a></p></blockquote><p class="wp-block-paragraph">Given a string <strong>s</strong>, find the length of the longest substring with all distinct characters. </p><p class="wp-block-paragraph"></p><pre class="wp-block-syntaxhighlighter-code">Input: s = "geeksforgeeks"Output: 7Explanation: "eksforg" is the longest substring with all distinct characters.</pre><p class="wp-block-paragraph"></p><pre class="wp-block-syntaxhighlighter-code">Input: s = "abcdefabcbb"Output: 6Explanation: The longest substring with all distinct characters is "abcdef", which has a length of 6.</pre><p class="wp-block-paragraph"></p><h2 class="wp-block-heading">My Approach – Sliding Window</h2><pre class="wp-block-syntaxhighlighter-code">class Solution:    def longestUniqueSubstr(self, s):        # code here        char_index = {}        max_length = 0        start = 0                for i, char in enumerate(s):            if char in char_index and char_index[char] &gt;= start:                start = char_index[char] + 1 #crux                        char_index[char] = i                        max_length = max(max_length, i - start + 1)                return max_length                </pre>
+<p class="wp-block-paragraph"></p><h2 class="wp-block-heading">Problem Statement</h2><blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"><p class="wp-block-paragraph">Geeks For Geeks : <a href="https://www.geeksforgeeks.org/problems/longest-distinct-characters-in-string5848/1">https://www.geeksforgeeks.org/problems/longest-distinct-characters-in-string5848/1</a></p></blockquote><p class="wp-block-paragraph">Given a string <strong>s</strong>, find the length of the longest substring with all distinct characters. </p><p class="wp-block-paragraph"></p><pre class="wp-block-syntaxhighlighter-code">
+Input: s = "geeksforgeeks"
+Output: 7
+Explanation: "eksforg" is the longest substring with all distinct characters.</pre><p class="wp-block-paragraph"></p><pre class="wp-block-syntaxhighlighter-code">
+Input: s = "abcdefabcbb"
+Output: 6
+Explanation: The longest substring with all distinct characters is "abcdef", which has a length of 6.</pre><p class="wp-block-paragraph"></p><h2 class="wp-block-heading">My Approach – Sliding Window</h2><pre class="wp-block-syntaxhighlighter-code">
+class Solution:
+    def longestUniqueSubstr(self, s):
+        # code here
+        char_index = {}
+        max_length = 0
+        start = 0
+        
+        for i, char in enumerate(s):
+            if char in char_index and char_index[char] &gt;= start:
+                start = char_index[char] + 1 #crux
+            
+            char_index[char] = i
+            
+            max_length = max(max_length, i - start + 1)
+        
+        return max_length
+                </pre>
 
 
 ## Related Posts

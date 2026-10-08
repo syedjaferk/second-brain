@@ -13,7 +13,51 @@ tags:
 
 
 
-<p class="wp-block-paragraph">Locust provides powerful event hooks, such as <code>test_start</code> and <code>test_stop</code>, to execute custom logic before and after a load test begins or ends. These events allow you to implement setup and teardown operations at the <strong>test level</strong>, which applies to the entire test run rather than individual users.</p><p class="wp-block-paragraph">In this blog, we will</p><ol class="wp-block-list"><li>Understand what <code>test_start</code> and <code>test_stop</code> are.</li><li>Explore their use cases.</li><li>Provide examples of implementing these events.</li><li>Discuss how to run and validate the setup.</li></ol><h3 class="wp-block-heading">What Are <code>test_start</code> and <code>test_stop</code>?</h3><ul class="wp-block-list"><li><strong><code>test_start</code></strong>: Triggered when the test starts. Use this event to perform actions like initializing global resources, starting external systems, or logging test start information.</li><li><strong><code>test_stop</code></strong>: Triggered when the test ends. This event is ideal for cleanup operations, aggregating results, or stopping external systems.</li></ul><p class="wp-block-paragraph">These events are <strong>global</strong> and apply to the entire test environment rather than individual user instances.</p><h3 class="wp-block-heading">Why Use <code>test_start</code> and <code>test_stop</code>?</h3><ul class="wp-block-list"><li><strong>Global Setup</strong>: Initialize shared resources, like database connections or external services.</li><li><strong>Logging</strong>: Record timestamps or test details for audit or reporting purposes.</li><li><strong>External System Management</strong>: Start/stop services that the test depends on, such as mock servers or third-party APIs.</li></ul><h3 class="wp-block-heading">Example: Basic Usage of <code>test_start</code> and <code>test_stop</code></h3><p class="wp-block-paragraph">Here’s a basic example demonstrating the usage of these events</p><pre class="wp-block-syntaxhighlighter-code">from locust import User, task, between, eventsfrom datetime import datetime# Global setup: Perform actions at test start@events.test_start.add_listenerdef on_test_start(environment, **kwargs):    print("Test started at:", datetime.now())# Global teardown: Perform actions at test stop@events.test_stop.add_listenerdef on_test_stop(environment, **kwargs):    print("Test stopped at:", datetime.now())# Simulated user behaviorclass MyUser(User):    wait_time = between(1, 5)    @task    def print_datetime(self):        """Task that prints the current datetime."""        print("Current datetime:", datetime.now())</pre><p class="wp-block-paragraph">Running the Example</p><ul class="wp-block-list"><li>Save the code as <code>locustfile.py</code>.</li><li>Start Locust -&gt; `<code>locust -f locustfile.py</code>`</li><li>Configure the test parameters (number of users, spawn rate, etc.) in the web UI at <a data-proofer-ignore="" href="#">http://localhost:8089</a>.</li><li>Observe the console output:<ul class="wp-block-list"><li>A message when the test starts (<code>on_test_start</code>).</li><li>Messages during the test as users execute tasks.</li><li>A message when the test stops (<code>on_test_stop</code>).</li></ul></li></ul><p class="wp-block-paragraph"></p><h3 class="wp-block-heading">Example: Logging Test Details</h3><p class="wp-block-paragraph">You can log detailed test information, like the number of users and host under test, using <code>environment</code> and <code>kwargs</code></p><pre class="wp-block-syntaxhighlighter-code">from locust import User, task, between, events@events.test_start.add_listenerdef on_test_start(environment, **kwargs):    print("Test started!")    print(f"Target host: {environment.host}")    print(f"Total users: {environment.runner.target_user_count}")@events.test_stop.add_listenerdef on_test_stop(environment, **kwargs):    print("Test finished!")    print("Summary:")    print(f"Requests completed: {environment.stats.total.num_requests}")    print(f"Failures: {environment.stats.total.num_failures}")class MyUser(User):    wait_time = between(1, 5)    @task    def dummy_task(self):        pass</pre><h3 class="wp-block-heading">Observing the Results</h3><p class="wp-block-paragraph">When you run the above examples</p><ul class="wp-block-list"><li><strong>At Test Start</strong>: Look for messages indicating setup actions, like initializing external systems or printing start time.</li><li><strong>During the Test</strong>: Observe user tasks being executed.</li><li><strong>At Test Stop</strong>: Verify that cleanup actions were executed successfully.</li></ul><p class="wp-block-paragraph"></p>
+<p class="wp-block-paragraph">Locust provides powerful event hooks, such as <code>test_start</code> and <code>test_stop</code>, to execute custom logic before and after a load test begins or ends. These events allow you to implement setup and teardown operations at the <strong>test level</strong>, which applies to the entire test run rather than individual users.</p><p class="wp-block-paragraph">In this blog, we will</p><ol class="wp-block-list"><li>Understand what <code>test_start</code> and <code>test_stop</code> are.</li><li>Explore their use cases.</li><li>Provide examples of implementing these events.</li><li>Discuss how to run and validate the setup.</li></ol><h3 class="wp-block-heading">What Are <code>test_start</code> and <code>test_stop</code>?</h3><ul class="wp-block-list"><li><strong><code>test_start</code></strong>: Triggered when the test starts. Use this event to perform actions like initializing global resources, starting external systems, or logging test start information.</li><li><strong><code>test_stop</code></strong>: Triggered when the test ends. This event is ideal for cleanup operations, aggregating results, or stopping external systems.</li></ul><p class="wp-block-paragraph">These events are <strong>global</strong> and apply to the entire test environment rather than individual user instances.</p><h3 class="wp-block-heading">Why Use <code>test_start</code> and <code>test_stop</code>?</h3><ul class="wp-block-list"><li><strong>Global Setup</strong>: Initialize shared resources, like database connections or external services.</li><li><strong>Logging</strong>: Record timestamps or test details for audit or reporting purposes.</li><li><strong>External System Management</strong>: Start/stop services that the test depends on, such as mock servers or third-party APIs.</li></ul><h3 class="wp-block-heading">Example: Basic Usage of <code>test_start</code> and <code>test_stop</code></h3><p class="wp-block-paragraph">Here’s a basic example demonstrating the usage of these events</p><pre class="wp-block-syntaxhighlighter-code">
+from locust import User, task, between, events
+from datetime import datetime
+
+# Global setup: Perform actions at test start
+@events.test_start.add_listener
+def on_test_start(environment, **kwargs):
+    print("Test started at:", datetime.now())
+
+# Global teardown: Perform actions at test stop
+@events.test_stop.add_listener
+def on_test_stop(environment, **kwargs):
+    print("Test stopped at:", datetime.now())
+
+# Simulated user behavior
+class MyUser(User):
+    wait_time = between(1, 5)
+
+    @task
+    def print_datetime(self):
+        """Task that prints the current datetime."""
+        print("Current datetime:", datetime.now())
+</pre><p class="wp-block-paragraph">Running the Example</p><ul class="wp-block-list"><li>Save the code as <code>locustfile.py</code>.</li><li>Start Locust -&gt; `<code>locust -f locustfile.py</code>`</li><li>Configure the test parameters (number of users, spawn rate, etc.) in the web UI at <a data-proofer-ignore="" href="#">http://localhost:8089</a>.</li><li>Observe the console output:<ul class="wp-block-list"><li>A message when the test starts (<code>on_test_start</code>).</li><li>Messages during the test as users execute tasks.</li><li>A message when the test stops (<code>on_test_stop</code>).</li></ul></li></ul><p class="wp-block-paragraph"></p><h3 class="wp-block-heading">Example: Logging Test Details</h3><p class="wp-block-paragraph">You can log detailed test information, like the number of users and host under test, using <code>environment</code> and <code>kwargs</code></p><pre class="wp-block-syntaxhighlighter-code">
+from locust import User, task, between, events
+
+@events.test_start.add_listener
+def on_test_start(environment, **kwargs):
+    print("Test started!")
+    print(f"Target host: {environment.host}")
+    print(f"Total users: {environment.runner.target_user_count}")
+
+@events.test_stop.add_listener
+def on_test_stop(environment, **kwargs):
+    print("Test finished!")
+    print("Summary:")
+    print(f"Requests completed: {environment.stats.total.num_requests}")
+    print(f"Failures: {environment.stats.total.num_failures}")
+
+class MyUser(User):
+    wait_time = between(1, 5)
+
+    @task
+    def dummy_task(self):
+        pass
+</pre><h3 class="wp-block-heading">Observing the Results</h3><p class="wp-block-paragraph">When you run the above examples</p><ul class="wp-block-list"><li><strong>At Test Start</strong>: Look for messages indicating setup actions, like initializing external systems or printing start time.</li><li><strong>During the Test</strong>: Observe user tasks being executed.</li><li><strong>At Test Stop</strong>: Verify that cleanup actions were executed successfully.</li></ul><p class="wp-block-paragraph"></p>
 
 
 ## Related Posts
